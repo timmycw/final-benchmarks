@@ -1,4 +1,5 @@
 (define (f x)
-    (if x 20 (if x 20 (if x 20 (if x 20 (if x 20 (if x 20 (if x 20 (if x 20 (if x 20 (if x 20 10)))))))))))
+(let ((y true))
+    (if y x (if y x (if y x (if y x (if y x (if y x (if y x (if y x (if x x (if x x 10))))))))))))
 
-(print (f false))
+(print (f 5))
